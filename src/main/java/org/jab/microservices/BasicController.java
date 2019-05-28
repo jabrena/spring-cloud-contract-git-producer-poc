@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path="/api")
+@RequestMapping("/api")
 public class BasicController {
 
-    @GetMapping(path="concept1")
+    @GetMapping("concept1")
     public ConceptReponse getConcept1() throws Exception {
         return new ConceptReponse("OK");
     }

@@ -1,14 +1,14 @@
 package org.jab.microservices;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class ConceptReponse {
 
-    private final String status;
+    private String status;
 
-    public ConceptReponse(String message) {
-        this.status = message;
-    }
-
-    public String getStatus() {
-        return status;
-    }
 }
